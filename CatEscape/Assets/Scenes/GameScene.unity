@@ -136,7 +136,11 @@ GameObject:
   - component: {fileID: 15255110}
   - component: {fileID: 15255109}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: LButton
+=======
+  m_Name: Button
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -534,10 +538,13 @@ RectTransform:
   - {fileID: 172224603}
   - {fileID: 15255108}
   - {fileID: 1734281700}
+<<<<<<< HEAD
   - {fileID: 1245538633}
   - {fileID: 680183001}
   - {fileID: 2050907934}
   - {fileID: 1247355363}
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -641,9 +648,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed3f2c4add6265f46b77c79aae5427ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   radius: 1
   maxHp: 10
   hp: 10
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,6 +737,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1 &680183000
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +975,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Hp
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
 --- !u!1 &1702493532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1007,12 +1020,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8340876e9e7ad41ae8ffdb8de3697f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   playTime: 10
   txtTime: {fileID: 680183002}
   isGameOver: 0
   txtScore: {fileID: 1245538634}
   txtHp: {fileID: 1247355365}
   gameoverGo: {fileID: 2050907933}
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
 --- !u!1 &1734281699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,7 +1042,11 @@ GameObject:
   - component: {fileID: 1734281702}
   - component: {fileID: 1734281701}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: RButton
+=======
+  m_Name: Button
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1145,6 +1165,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734281699}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &2050907933
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1201,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1280, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
 --- !u!1 &2143146640
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+<<<<<<< HEAD
     public float radius = 1.0f;  // 플레이어의 반경(반지름), 반지름을 수정하여 충돌 범위를 변경 가능
 
     private GameDirector gameDirector;
@@ -14,12 +15,19 @@ public class PlayerController : MonoBehaviour
     {
         this.gameDirector = GameObject.FindObjectOfType<GameDirector>();
         this.hp = this.maxHp;
+=======
+    void Start()
+    {
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
     }
 
     void Update()
     {
+<<<<<<< HEAD
         if (this.gameDirector.isGameOver) return;
 
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
         // 키보드 왼쪽 화살표를 누르면
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
@@ -31,6 +39,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(3, 0, 0);  // x축 오른쪽으로 3 움직인다
         }
+<<<<<<< HEAD
 
         // 플레이어가 화면 밖으로 못 나가게 하는 방법 1
         // 카메라의 좌측 하단은 (0,0 , 0.0) 이며, 우측 상단은 (1.0 , 1.0)
@@ -76,5 +85,19 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, this.radius);
+=======
+    }
+
+    // UI 왼쪽 화살표를 클릭하면
+    public void LButtonDown()
+    {
+        transform.Translate(-1, 0, 0);  // x축 왼쪽으로 1 움직인다
+    }
+
+    // UI 오른쪽 화살표를 클릭하면
+    public void RButtonDown()
+    {
+        transform.Translate(1, 0, 0);  // x축 오른쪽으로 1 움직인다
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
     }
 }

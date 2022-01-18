@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameDirector : MonoBehaviour
 {
+<<<<<<< HEAD
     private GameObject hpGauge;
 
     public float playTime = 10;
@@ -14,18 +15,25 @@ public class GameDirector : MonoBehaviour
     public Text txtScore;
     public Text txtHp;
     private int totalScore;
+=======
+    GameObject hpGauge;
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
 
     void Start()
     {
         this.hpGauge = GameObject.Find("hpGauge");
+<<<<<<< HEAD
         this.txtScore.text = string.Format("{0}Á¡", this.totalScore);
 
         var player = GameObject.FindObjectOfType<PlayerController>();
         this.txtHp.text = string.Format("{0}/{1}", player.hp, player.maxHp);
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
     }
 
     void Update()
     {
+<<<<<<< HEAD
         if (this.isGameOver) return;
 
         this.delta += Time.deltaTime;
@@ -57,12 +65,15 @@ public class GameDirector : MonoBehaviour
         this.gameoverGo.SetActive(true);
         this.isGameOver = true;
         Debug.Log("GAME OVER");
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
     }
 
     public void DecreaseHp()
     {
         this.hpGauge.GetComponent<Image>().fillAmount -= 0.1f;
     }
+<<<<<<< HEAD
 
     public void UpdateHpGauge(float hp, float maxHp)
     {
@@ -77,4 +88,6 @@ public class GameDirector : MonoBehaviour
             }
         }
     }
+=======
+>>>>>>> 8ad34f4c9d2ab63a143c419943ea04d5bf9450e8
 }
