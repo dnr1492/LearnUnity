@@ -33,6 +33,12 @@ public class CarController : MonoBehaviour
             float swipeLength = this.endPos.x - this.startPos.y;
             // 스와이프(드레그) 길이를 초기 속도로 변경
             this.speed = swipeLength / 5000.0f;
+
+            // 효과음을 재생 방법 1
+            GetComponent<AudioSource>().Play();
+            // 효과음을 재생 방법 2
+            //AudioSource audioSource = GetComponent<AudioSource>();
+            //audioSource.Play();
         }
 
         transform.Translate(this.speed, 0, 0);  // x축으로 이동
