@@ -21,7 +21,7 @@ public class GameDirector : MonoBehaviour
         float length = this.flag.transform.position.x - this.car.transform.position.x;  // flag(깃발)까지의 남은 거리
         // flag(깃발)까지의 남은 거리가 0 이상이면
         if (length >= 0) { this.distance.GetComponent<Text>().text = "목표 지점까지 " + length.ToString("F2") + "m"; }
-        // // flag(깃발)까지의 남은 거리가 0 미만이면
+        // flag(깃발)까지의 남은 거리가 0 미만이면
         else { this.distance.GetComponent<Text>().text = "게임 오버"; }
     }
 }

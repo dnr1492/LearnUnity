@@ -6,8 +6,8 @@ public class CarController : MonoBehaviour
 {
     float speed = 0;  // 게임이 시작할 때는 속도가 0 이므로 자동차가 움직이지 않는다
 
-    Vector2 startPos;
-    Vector2 endPos;
+    Vector3 startPos;
+    Vector3 endPos;
 
     void Start()
     {

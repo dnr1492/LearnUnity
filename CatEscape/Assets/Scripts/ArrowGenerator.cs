@@ -9,20 +9,26 @@ public class ArrowGenerator : MonoBehaviour
     float span = 1;
     float delta = 0;  // 경과 시간 초기값
 
+    private GameDirector gameDirector;
+
     void Start()
     {
+        this.gameDirector = GameObject.FindObjectOfType<GameDirector>();
     }
 
     void Update()
     {
-        this.delta += Time.deltaTime;  // 매 프레임마다 경과 시간을 누적
+        if(this.gameDirector.isGameOver) return;
+
+        // 매 프레임마다 경과 시간을 누적
+        this.delta += Time.deltaTime;  
+        // 만약 경과 시간이 1초이상이라면
         if (this.delta >= this.span)
         {
             this.delta = 0;
-            //GameObject go = Instantiate(arrowPrefab) as GameObject;  // 프리팹 인스턴스화. 즉, 프리팹을 동적으로 생성 방법 1
-            GameObject go = Instantiate<GameObject>(arrowPrefab);  // 프리팹 인스턴스화. 즉, 프리팹을 동적으로 생성 방법 2
+            GameObject go = Instantiate<GameObject>(arrowPrefab);
             float px = Random.Range(-8.7f, 8.7f);
-            go.transform.position = new Vector3(px, 4.44f, 0);
+            go.transform.position = new Vector3(px, 4.44f, 0);  // x축 -8.7 ~ 7.7 사이
         }
     }
 }
